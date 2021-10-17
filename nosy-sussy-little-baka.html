@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <title>GATEWAY</title>
+    <meta content="GATEWAY" property="og:title" />
+    <meta content="https://unctrlabsence.github.io/gateway" property="og:url" />
+    <meta content="#ffffff" data-react-helmet="true" name="theme-color" />
+
+    <style>
+        @font-face { font-family: Monbaiti; src: url('monbaiti.ttf'); }
+        html, body {height: 100%;}
+        body {background-color: black; overflow: hidden;}
+        p {color: black;
+            font-family: "Monbaiti", serif;}
+        a {color: black; font-family: "Monbaiti", serif;} 
+        a:hover {text-decoration: none; color:rgb(58, 58, 58);}
+        div {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+    <body>
+        <div id="digging through code? well, doesn't that just run the fun.">
+            <p> 
+                <a href="https://youtu.be/xhny4vBm35A">is this snow? or is it something of my own?</a>
+            </p>
+        </div>
+        <script type="text/javascript">
+            var divs = document.getElementsByTagName('div');
+
+            var winWidth = window.innerWidth;
+            var winHeight = window.innerHeight;
+
+            for ( var i=0; i < divs.length; i++ ) {
+ 	
+                var thisDiv = divs[i];
+    
+                randomTop = getRandomNumber(0, winHeight);
+                randomLeft = getRandomNumber(0, winWidth);
+    
+                thisDiv.style.top = randomTop +"px";
+                thisDiv.style.left = randomLeft +"px";    
+            }
+
+            function getRandomNumber(min, max) {    
+                return Math.random() * (max - min) + min;    
+            }
+        </script>
+    </body>
+</html>
