@@ -2,4 +2,4 @@ when you read text,
 
 are you reading the words?
 
-_r are you reading the thoughts?_
+_or are you reading the thoughts?_
